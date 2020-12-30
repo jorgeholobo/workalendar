@@ -8,11 +8,20 @@ from ..registry_tools import iso_register
 class Brazil(WesternCalendar):
     "Brazil"
     FIXED_HOLIDAYS = WesternCalendar.FIXED_HOLIDAYS + (
-        (4, 21, "Tiradentes' Day"),
-        (9, 7, "Independence Day"),
-        (10, 12, "Our Lady of Aparecida"),
-        (11, 2, "All Souls' Day"),
-        (11, 15, "Republic Day"),
+        (1, 1, "New Years"), 
+        (1, 25, "São Paulo Birthday"), 
+        (2, 15, "Carnaval1st"), 
+        (2, 16, "Carnaval2nd"), 
+        (4, 2, "Paixao Cristo"), 
+        (4, 21, "Tiradentes"), 
+        (6, 3, "Corpus Christi"), 
+        (7, 9, "Revolução Constitucionalista"), 
+        (9, 7, "Independencia"), 
+        (10, 12, "Nossa Senhora Aparecida"), 
+        (11, 2, "Finados"), 
+        (11, 15, "Proclamação da República"), 
+        (12, 24, "Véspera de Natal "), 
+        (12, 31, "Véspera de Ano Novo"), 
     )
     include_sao_jose = False
     sao_jose_label = "São José"
@@ -21,7 +30,7 @@ class Brazil(WesternCalendar):
     include_sao_joao = False
     sao_joao_label = "São João"
     # Civil holidays
-    include_labour_day = True
+    include_labour_day = False
     include_servidor_publico = False
     servidor_publico_label = "Dia do Servidor Público"
     # Consciência Negra day
@@ -32,7 +41,7 @@ class Brazil(WesternCalendar):
     consciencia_negra_label = "Consciência Negra"
 
     # Christian holidays
-    include_easter_sunday = True
+    include_easter_sunday = False
     # Dia de Nossa Senhora da Conceição is the Immaculate Conception.
     include_immaculate_conception = False
     immaculate_conception_label = "Dia de Nossa Senhora da Conceição"
